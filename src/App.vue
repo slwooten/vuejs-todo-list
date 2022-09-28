@@ -1,6 +1,8 @@
 <template>
   <div class="app">
-    <HomePage />
+    <div class="app-container">
+      <HomePage />
+    </div>
   </div>
 </template>
 
@@ -23,6 +25,15 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  border: solid black 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-container {
+  border: dotted black 2px;
+  border-radius: 8%;
+  flex: 1 1 800px;
+  max-width: 800px;
+  padding: 3rem;
 }
 </style>

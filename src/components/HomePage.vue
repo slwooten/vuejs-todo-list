@@ -1,7 +1,7 @@
 <template>
-  <h1>Todo List</h1>
+  <h1>My Todo List:</h1>
   <AddTaskBtn />
-  <div>
+  <div class="todos">
     <div v-for="item in keysArr" :key="item">
       <TodoItem :item="item" />
     </div>
@@ -38,3 +38,12 @@ import TodoItem from './TodoItem';
    }
  }
 </script>
+
+<style>
+  .todos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
